@@ -10,28 +10,26 @@ while (opcion){
     for(let i = 1; i <= numElementos; i++){
         
         if (i === 1){
-            let suces = `Elemento N°${i}: ${i-1}`;
+            let suces = `Elemento N°${i}:    ${i-1}`;
             alert(suces);
         }
         else if( i === 2){
             elem1 = i-1;
             elemActual = elem1 +  elem2;
-            let suces = `Elemento N° ${i}: ${elemActual}`;
+            let suces = `Elemento N°${i}:    ${elemActual}`;
             alert(suces);
         }
         else{
             elemActual = elem1 + elem2;
             elem2 = elem1;
             elem1 = elemActual;
-            let suces = `Elemento N° ${i}: ${elemActual}`;
+            let suces = `Elemento N°${i}:    ${elemActual}`;
             alert(suces);
         }
-
     }
     
     let continuo = parseInt( prompt("¿Desea CERRAR el generador Fibonacci? (Si: Ingrese 1  ; No: Ingrese 0)") )
     if(continuo){ opcion = 0;}
 
 }
-
 alert("Simulador cerrado, recargue la página para volver a utilizarlo")
